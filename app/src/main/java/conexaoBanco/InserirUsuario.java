@@ -22,6 +22,8 @@ public class InserirUsuario {
             pstmt.executeUpdate();
             
             System.out.println("Usuário inserido com sucesso");
+        } catch (Exception e){
+            System.out.println("Erro ao inserir usuario: " + e.getMessage());
         }
     }
 }
